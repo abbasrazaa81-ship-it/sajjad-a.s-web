@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donations - امام سجاد (ع) اسلامک سینٹر</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo"><i class="fas fa-mosque"></i> امام سجاد (ع) اسلامک سینٹر</div>
+                <ul class="nav-menu">
+                   <ul class="nav-menu">
+<li><a href="index.html" data-key="nav_home">Home</a></li>
+<li><a href="about.html" data-key="nav_about">About</a></li>
+<li><a href="programs.html" data-key="nav_programs">Programs</a></li>
+<li><a href="events.html" data-key="nav_events">Events</a></li>
+<li><a href="ramazan.html" data-key="nav_ramazan">Ramazan</a></li>
+<li><a href="donate.html" data-key="nav_donate">Donations</a></li>
+<li><a href="contact.html" data-key="nav_contact">Contact</a></li>
+</ul>
+
+                <div class="language-dropdown">
+    <select id="languageSwitcher">
+        <option value="en">English</option>
+        <option value="hi">हिन्दी</option>
+        <option value="ur">اردو</option>
+    </select>
+</div>
+               <div class="hamburger"><span></span><span></span><span></span></div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="page-hero">
+        <div class="hero-content">
+           <h1>ہمارے مرکز کی معاونت کریں</h1>
+          <p>آپ کے فراخدلانہ عطیات ہمارے پروگرامز کو جاری رکھنے میں مدد دیتے ہیں</p>
+        </div>
+    </section>
+
+    <section class="support-details" dir="rtl" style="padding: 40px 20px; background-color: #fcfcfc;">
+    <div style="max-width: 900px; margin: 0 auto; background: #ffffff; padding: 30px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); border-top: 6px solid #1a5d1a;">
+        
+        <h2 style="color: #1a5d1a; text-align: center; font-size: 28px; margin-bottom: 10px;">💝 ہمارے مقصد میں تعاون کریں</h2>
+        <div style="height: 2px; background: #d4af37; width: 100px; margin: 0 auto 30px;"></div>
+
+        <div style="background: #f0f4f0; padding: 20px; border-radius: 10px; margin-bottom: 30px; border-right: 6px solid #1a5d1a; text-align: center;">
+            <p style="font-size: 22px; margin-bottom: 10px; font-weight: bold;">مَنْ بَنَى مَسْجِدًا لِلَّهِ بَنَى اللَّهُ لَهُ مِثْلَهُ فِي الْجَنَّةِ</p>
+            <p style="color: #444; font-size: 18px;">"جس نے اللہ کے لیے مسجد بنائی، اللہ اس کے لیے جنت میں ویسا ہی گھر بنائے گا۔"</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; text-align: right;">
+            <div style="padding: 15px; border: 1px solid #eee; border-radius: 10px;">
+                <h3 style="color: #1a5d1a;">🗓️ ماہانہ ممبرشپ</h3>
+                <p><strong>تجویز کردہ:</strong> ₹500/ماہ (یا اپنی استطاعت کے مطابق)</p>
+            </div>
+
+            <div style="padding: 15px; border: 1px solid #eee; border-radius: 10px; background: #fdfdfd;">
+                <h3 style="color: #1a5d1a;">🏗️ تعمیراتی منصوبے</h3>
+                <ul style="list-style: none; padding: 0; line-height: 1.8;">
+                    <li>✅ عیدگاہ باؤنڈری - ₹5,00,000</li>
+                    <li>✅ مسجد اے سی/کولر - ₹10,000</li>
+                    <li>✅ مائک سسٹم - ₹75,000</li>
+                </ul>
+            </div>
+        </div>
+
+        <p style="text-align: center; margin-top: 30px; font-weight: bold; color: #555;">👇 براہ کرم نیچے دیا گیا فارم بھریں اور اپنا تعاون جمع کروائیں</p>
+    </div>
+</section>
+
+    <section class="container">
+        <div class="form-grid">
+            <div>
+                <h2>Quick Donate</h2>
+                <form id="donationForm">
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Amount (£)</label>
+                        <input type="number" id="amount" min="5" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Method</label>
+                        <select id="method" required>
+                            <option value="">Select</option>
+                            <option value="justgiving">JustGiving</option>
+                            <option value="bank">Bank Transfer</option>
+                            <option value="membership">Membership</option>
+                        </select>
+                    </div>
+                    <button type="submit">Donate Now</button>
+                </form>
+            </div>
+            <div id="bank-details" class="hidden">
+                <h3>Bank Transfer Details</h3>
+                <p><strong>Account:</strong> Imam sajjad (AS) Welfare<br>
+                <strong>Sort Code:</strong> 77-50-16<br>
+                <strong>Account No:</strong> 04512868</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+    <p>&copy; 2026 امام سجاد (ع) اسلامک سینٹر</p>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
